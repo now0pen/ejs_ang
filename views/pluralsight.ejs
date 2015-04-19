@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="pl_app">
+<head><% include partials/head.ejs %></head>
+<body ng-controller="MainController"> 
+<div class="container">
+    <h1>{{message}}</h1>
+    <p>1 + 1 is {{ 1 + 1 }}</p>
+    <p>First name: {{person.firstName}}</p>
+    <p>Last name: {{person.lastName}}</p>
+    <p><img ng-src="{{person.imageSrc}}" title="{{person.firstName}}"></p>
+
+    <div>Name: {{user.name}}</div>
+    <div>Location: {{user.location}}</div>
+    <p><img ng-src="{{user.avatar_url}}" title="{{user.name}}"></p>
+
+    <!-- footer has scripts to cdn -->
+    <div id="footer"><% include partials/footer.ejs %></div>
+
+
+</div> 
+<!-- end .container -->
+
+</body> 
+</html>
